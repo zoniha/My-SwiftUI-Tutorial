@@ -10,11 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
 
-		NavigationView {
-			Text("Hi 👋")
-				.navigationTitle(Text("Title"))
-				.navigationBarTitleDisplayMode(.inline)
-				.navigationBarItems(leading: Text("leading"), trailing: Text("trailing"))
+		VStack {
+			Text("good")
+			Text("good")
 		}
 	}
 }
