@@ -10,18 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
 
-		List {
-			Text("Apple")
-				.foregroundColor(Color(red: 123/255, green: 200/255, blue: 233/255, opacity: 1.0))
-				.padding()
-			Text("kiwifruit")
-				.foregroundColor(Color(red: 123/255, green: 200/255, blue: 233/255, opacity: 1.0))
-				.padding()
-			Text("Litchi")
-				.foregroundColor(Color(red: 123/255, green: 200/255, blue: 233/255, opacity: 1.0))
-				.padding()
+		NavigationView {
+			Text("Hi 👋")
+				.navigationTitle(Text("Title"))
+				.navigationBarTitleDisplayMode(.inline)
+				.navigationBarItems(leading: Text("leading"), trailing: Text("trailing"))
 		}
-    }
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
