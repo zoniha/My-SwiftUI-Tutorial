@@ -8,7 +8,7 @@ struct ContentView: View {
 			Text("Hi \(username)👋")
 				.padding()
 				.foregroundColor(.pink)
-			TextField("Input yor username", text: $username)
+			TextField("Input yor username", text: $username, onCommit: {username = ""})
 				.padding()
 		}
 	}
