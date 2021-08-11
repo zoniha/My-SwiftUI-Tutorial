@@ -4,13 +4,9 @@ struct ContentView: View {
 	@State var username: String = ""
 
 	var body: some View {
-		VStack {
-			Text("Hi \(username)👋")
-				.padding()
-				.foregroundColor(.pink)
-			TextField("Input yor username", text: $username, onCommit: {username = ""})
-				.padding()
-		}
+		Image("rayz")
+			.resizable()
+			.frame(width: 300, height: 200, alignment: .center)
 	}
 }
 
