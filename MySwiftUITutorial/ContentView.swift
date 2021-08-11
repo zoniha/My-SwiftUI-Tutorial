@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var name: String = "TensorFlow"
+
 	var body: some View {
 
-		Button(action: {print("Hi Button!")}) {
-			Text("Push")
+		VStack {
+			Text(name)
+			Button(action: {self.name = "PyTorch🔥"}) {
+				Text("Change Library")
+			}
 		}
 
 	}
